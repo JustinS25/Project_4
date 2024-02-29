@@ -96,9 +96,6 @@ Summary
 
 <img src="Images/Feature Importance/Decision Tree Model Feature Importance.png" width="" height="400">
 
-## Post Model Analysis
-
-By looking at the feature importance, we can make some further analysis on data to understand why the model deemed these features the most important. The first thing that we did was make a pie chart of average stream per decade. It was found that 
 
 ## Citations
 
