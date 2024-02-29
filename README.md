@@ -43,8 +43,14 @@ Furthermore, we wanted to compare whether a song was written in a major key or m
 
 <img src="Images/Bar Plots/Mode vs Maximum Streams.png" width="" height="400">
 
-Going into the building of these models, it would be very interesting to see the feature importance of the models and see which data matters the most in predicting whether a song will be popular or not. After seeing the feature importance, some post-data analysis will be necessary.
+Some more analysis was made on release year and release month. Over the course of this dataset (1930's to present), we wanted to see if releasing a song during a certain time period makes it more popular. By looking at this pie chart, we can see that on average, songs released during certain times of the year tend to gain more popularity. Songs released in January and September actually have more influence on how many people like it. However, a lot of songs are released in January therefore, it make sense for songs to have more streams on average during that time. However, if we look at September, a very small percentage of songs are released but songs during this time period seem extremely popular. This could be random or could be a fact but it is hard to tell given this small sample size of data. 
 
+<img src="Images/Pie Chart/Amount of Songs Released per Month.png" width="" height="300">
+<img src="Images/Pie Chart/Amount of Streams per Month on Average.png" width="" height="300">
+
+Furthermore, it was also interesting to analyze the total amount of streams that each song got per decade. As you can see from this pie chart, the vast majority of streams come from the more recent decades.
+
+<img src="Images/Pie Chart/Amount of Streams per Decade in Total.png" width="" height="400">
 
 
 ## Model Analysis
@@ -59,8 +65,9 @@ Continuing involved encoding categorical variables, scaling numerical features u
 
 RandomOverSampler:
 
-<img src="Images/Analysis Screenshots/Oversampler.png" width="" height="150">
+The reason that we chose to optimize this model using a random over sampler is because there is not much support for predicting a mildly popular song and a very popular song. By resampling the data, we give more datapoints for the model to use to predict these targets. However, this had a reverse effect on the accuracy of the data and we actually found less precision within the data set. The recall scores were a lot higher though in predicting the actual true postives within the dataset but overall a bad accuracy with everything else.
 
+<img src="Images/Analysis Screenshots/Oversampler.png" width="" height="150">
 
 <img src="Images/Analysis Screenshots/Oversampler_Report.png" width="" height="300">
 
@@ -85,6 +92,13 @@ Model Construction
 Summary
 * Overall, the model did not perform as well as we would have liked it to. Especially after changing the amount of neurons and layers. The best option was to use supervised machine learning because the model did not seem complex enough to use a neural network.
 
+## Feature Importance 
+
+<img src="Images/Feature Importance/Decision Tree Model Feature Importance.png" width="" height="50">
+
+## Post Model Analysis
+
+By looking at the feature importance, we can make some further analysis on data to understand why the model deemed these features the most important. The first thing that we did was make a pie chart of average stream per decade. It was found that 
 
 ## Citations
 
