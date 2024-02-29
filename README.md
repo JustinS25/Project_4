@@ -94,7 +94,7 @@ Summary
 
 ## Feature Importance 
 
-<img src="Images/Feature Importance/Decision Tree Model Feature Importance.png" width="" height="50">
+<img src="Images/Feature Importance/Decision Tree Model Feature Importance.png" width="" height="400">
 
 ## Post Model Analysis
 
